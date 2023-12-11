@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(52, 53, 92);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: rgb(240, 217, 88);
+}
+.header {
+    background-color: rgb(13, 15, 46);
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+}
+.footer {
+    background-color: rgb(13, 15, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+    font-style: italic;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+.buttons button {
+    background-color: rgb(13, 15, 46);
+    border: none;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    font-size: 80px;
+}
+.rule-one {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+.rule-two {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 50px;
+}
+
+.scores {
+    margin: 20px;
+    display: flex;
+    gap: 50px;
+}
+.score-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.score-tab .sign {
+    font-size: 80px;
+}
+
+.modal {
+    background-color: rgb(13, 15, 46);
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    padding: 40px;
+    border-radius: 40px;
+    font-size: 30px;
+    display: none;
+    font-style: italic;
+    z-index: 2000;
+    position: relative;
+}
+.content {
+    display: flex;
+    gap: 20px;
+}
+.close {
+    background-color: rgb(52, 53, 92);
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+.modal button {
+    border: none;
+    background-color: rgb(52, 53, 92);
+    color: inherit;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: inherit;
+    font-style: inherit;
+}
+.modal .right {
+    display: flex;
+    flex-direction: column;
+}
+.winner {
+    background-color: rgb(52, 53, 92);
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}

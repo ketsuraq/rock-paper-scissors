@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥳 Rock: paper scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="header">Rock! Paper! Scissors!</div>
+
+    <div class="main">
+        <div class="rule-one">Choose a weapon!</div>
+        <div class="rule-two">First to 5 points wins!</div>
+
+        <div class="scores">
+            <div class="score-tab">
+                    <div class="sign" id="player-sign">?</div>
+                    <p class="score-text">Player: 0</p>
+            </div>
+            <div class="score-tab">
+                    <div class="sign" id="computer-sign">?</div>
+                    <p class="score-text">Computer: 0</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="button-square" id="rock-button">
+                <div class="sign">👊</div>
+            </button>            
+            <button class="button-square" id="paper-button">
+                <div class="sign">✋</div>
+            </button>
+            <button class="button-square" id="scissor-button">
+                <div class="sign">🤞</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">Odin project @ ketsuraq 2023</div>
+
+    <div class="overlay"></div>
+
+    <div class="modal">
+        <div class="content">
+            <div class="left">
+                <span class="close">&times;</span>
+            </div>
+            <div class="right">
+                <p class="winner"></p>
+            <button class="play-again">Again?</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
